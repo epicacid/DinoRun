@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour {
     public Transform groundPoint;
     public float radius;
     public LayerMask groundMask;
+    public bool walking;
 
     bool isGrounded;
     Rigidbody2D rb2D;
@@ -16,6 +17,7 @@ public class PlayerMovement : MonoBehaviour {
 	void Start ()
     {
         rb2D = GetComponent<Rigidbody2D>();
+        walking = true;
 	}
 	
 	
