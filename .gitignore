@@ -77,3 +77,5 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+ProjectSettings/TagManager.asset
+Assets/Scripts/CameraFollow.cs
