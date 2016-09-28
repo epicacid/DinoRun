@@ -11,7 +11,7 @@ public class Pause : MonoBehaviour {
 		}
 		if (pauseMenuEnabled) {
 			Debug.Log("is paused");
-			Time.timeScale = 0.0f;
+			Time.timeScale = 0.0f;	
 			Debug.Log (Time.timeScale);
 		} else {
 			Debug.Log("is playing");

@@ -5,33 +5,23 @@ public class AutoMovement : MonoBehaviour {
 
 	Transform Obstacle;
 	[SerializeField]
-	private float _speed = 5;
-	private Vector2 _newPosition = new Vector2 (4,0);
+	private float _speed = 1;
 
-
-
-
-
-
-
-
-	// Use this for initialization
-	void Start () {
-		
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-
-		//transform.position = Vector2.MoveTowards (new Vector (transform.position.x), _newPosition, _speed * Time.deltaTime);
-		transform.Translate (Vector2.left * Time.deltaTime * _speed);
-
-
-
-			
-			
-	
+	void OnTriggerEnter2D(Collider2D coll)
+	{
+		if (coll.gameObject.tag == "Right") {
+			Debug.Log ("Left");
+			transform.Translate (Vector2.left * Time.deltaTime * _speed);
+		} 
+		if (coll.gameObject.tag == "Left") {
+			Debug.Log ("Right");
+			transform.Translate (Vector2.right * Time.deltaTime * _speed);
+		}
 	}
 }
+
+
+
+
+
 
