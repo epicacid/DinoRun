@@ -7,6 +7,7 @@ public class AutoMovement : MonoBehaviour {
 	[SerializeField]
 	private float _speed = 1;
 
+	/*
 	void OnTriggerEnter2D(Collider2D coll)
 	{
 		if (coll.gameObject.tag == "Right") {
@@ -18,6 +19,9 @@ public class AutoMovement : MonoBehaviour {
 			transform.Translate (Vector2.right * Time.deltaTime * _speed);
 		}
 	}
+	*/
+
+	
 }
 
 
