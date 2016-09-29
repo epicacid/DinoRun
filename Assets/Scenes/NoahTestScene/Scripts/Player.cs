@@ -25,4 +25,13 @@ public class Player : MonoBehaviour {
 			rb2.AddForce (Vector2.left * Time.deltaTime * _speed);
 			}
 		}
+
+	void OnCollisionEnter2D(Collision2D coll){
+		if (coll.gameObject.tag == "obstacle"){
+			healthPoints -= 1;
+
 	}
+
+	}
+}
+
