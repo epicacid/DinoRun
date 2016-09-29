@@ -8,7 +8,7 @@ public class PlayerMovementEndless : MonoBehaviour {
 
     private Rigidbody2D playerRigidBody;
 
-    public bool grounded;
+        public bool grounded;
     public LayerMask isGround;
 
     private Collider2D myCollider;
