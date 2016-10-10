@@ -129,6 +129,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 50000011644975028, guid: a9df2ddcfd5f68048b317763e71986f6,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a9df2ddcfd5f68048b317763e71986f6, type: 2}
   m_IsPrefabParent: 0
@@ -211,7 +216,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 418421418}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.47, z: 0}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 24.387192, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -407,14 +412,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ebcb401f30f2494d86f9eaffa15871d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 2096395768}
-  coin: {fileID: 4000011094171910, guid: 4740b2cee4fdb0c4cb4ab2cb3e3b197c, type: 2}
-  minX: 1
-  maxX: 10
-  minY: 1
-  maxY: 2
-  minZ: 0
-  maxZ: 0
+  _player: {fileID: 2096395768}
+  _coin: {fileID: 4000011094171910, guid: 4740b2cee4fdb0c4cb4ab2cb3e3b197c, type: 2}
+  _minX: 0
+  _maxX: 0
+  _minY: 1
+  _maxY: 2
   maxCoins: 1
 --- !u!4 &1807793639
 Transform:
@@ -423,7 +426,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1807793637}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.39, y: -3.7, z: 0}
+  m_LocalPosition: {x: 1.87, y: 0.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
