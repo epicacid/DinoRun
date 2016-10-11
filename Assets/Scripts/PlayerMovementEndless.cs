@@ -3,8 +3,12 @@ using System.Collections;
 
 public class PlayerMovementEndless : MonoBehaviour {
 
+
     public float moveSpeed;
     public float jumpForce;
+    public float dash;
+    public float defaultspeed;
+    
 
     private Rigidbody2D playerRigidBody;
 
@@ -36,7 +40,20 @@ public class PlayerMovementEndless : MonoBehaviour {
 
            
         }
-
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            moveSpeed = dash;
+        }
+       
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            
+            moveSpeed = defaultspeed; 
+            
+        }
+        
 
 	}
-}
+
+    }
+
