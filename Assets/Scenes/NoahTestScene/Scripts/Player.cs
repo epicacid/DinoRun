@@ -29,6 +29,7 @@ public class Player : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D coll){
 		if (coll.gameObject.tag == "obstacle"){
 			healthPoints -= 1;
+			Debug.Log ("geraakt");
 
 	}
 
