@@ -51,7 +51,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc9486329bb9447a7997b9004ac5893f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lava: {fileID: 4000013664614286, guid: 550a3e1b1ece04c0e84a40d034ab2cb6, type: 2}
+  lava: {fileID: 4000012797049958, guid: f9d40c3121a33fc45929295776e9fe71, type: 2}
   spawnPoints: {fileID: 4000011217838786}
   _lavaSpeed: 100
   maxLava: 1
+  randomTime: 0
