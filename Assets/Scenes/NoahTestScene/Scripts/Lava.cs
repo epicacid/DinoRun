@@ -6,7 +6,7 @@ public class Lava : MonoBehaviour {
 	[SerializeField]
 	private float lavaSpeed = 10.0f;
 	[SerializeField]
-	private float destroyTime = 3.0f;
+	private float destroyTime = 0.2f;
 
 	// Use this for initialization
 	void Start () {

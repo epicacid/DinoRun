@@ -26,7 +26,7 @@ public class LavaDrop : MonoBehaviour {
 
 	IEnumerator Spawn(){
 		for(int i = 0; i < maxLava; i++){
-			Instantiate  (lava, spawnPoints.transform.position,Random.rotation);
+			Instantiate  (lava, spawnPoints.transform.position,Quaternion.identity);
 		}
 		yield return new WaitForSeconds (randomTime);
 		StartCoroutine (Spawn());
