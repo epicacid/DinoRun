@@ -34,6 +34,20 @@ public class PlayerHealth : MonoBehaviour
 
 
         }
+
+
+
+    }
+
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+        if (coll.gameObject.tag == "Obstacle")
+        {
+            currentHealth -= 1;
+            Debug.Log("geraakt");
+
+        }
+
     }
 
 }

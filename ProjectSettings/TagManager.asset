@@ -9,6 +9,7 @@ TagManager:
   - Left
   - Coin
   - Player2
+  - Ground
   layers:
   - Default
   - TransparentFX

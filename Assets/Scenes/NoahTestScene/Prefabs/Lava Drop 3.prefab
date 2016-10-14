@@ -34,7 +34,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010147689498}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.16, y: 4.98, z: 0}
+  m_LocalPosition: {x: -1.16, y: 4.98, z: 20.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -55,4 +55,5 @@ MonoBehaviour:
   spawnPoints: {fileID: 4000011245193452}
   _lavaSpeed: 100
   maxLava: 1
-  randomTime: 0
+  randomTime: 6
+  zRotation: 0
