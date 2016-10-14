@@ -13,6 +13,8 @@ public class LavaDrop : MonoBehaviour {
 	private float maxLava = 10.0f;
     [SerializeField]
 	private float randomTime;
+	[SerializeField]
+	private float zRotation;
 
 
 
@@ -26,7 +28,7 @@ public class LavaDrop : MonoBehaviour {
 
 	IEnumerator Spawn(){
 		for(int i = 0; i < maxLava; i++){
-			Instantiate  (lava, spawnPoints.transform.position,Quaternion.identity);
+			Instantiate  (lava, spawnPoints.transform.position,Quaternion.Euler(0,0,zRotation));
 		}
 		yield return new WaitForSeconds (randomTime);
 		StartCoroutine (Spawn());

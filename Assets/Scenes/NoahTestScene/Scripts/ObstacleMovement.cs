@@ -22,5 +22,6 @@ public class ObstacleMovement : MonoBehaviour {
 			_minimumDist = temp;
 			t = 0.0f;
 		}
+
 	}
 }

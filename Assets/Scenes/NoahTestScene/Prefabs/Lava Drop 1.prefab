@@ -55,4 +55,5 @@ MonoBehaviour:
   spawnPoints: {fileID: 4000013029873186}
   _lavaSpeed: 100
   maxLava: 1
-  randomTime: 0
+  randomTime: 5
+  zRotation: -50
