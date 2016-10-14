@@ -24,6 +24,7 @@ GameObject:
   - 50: {fileID: 50000013211817286}
   - 61: {fileID: 61000010648132210}
   - 114: {fileID: 114000011831535074}
+  - 114: {fileID: 114000011765923866}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Obstacle
@@ -111,6 +112,18 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
+--- !u!114 &114000011765923866
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012437455616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c626d5a3654b64a5b8e1b7999a63af6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _width: 15
 --- !u!114 &114000011831535074
 MonoBehaviour:
   m_ObjectHideFlags: 1
