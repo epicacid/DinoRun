@@ -10,10 +10,22 @@ public class Lava : MonoBehaviour {
 
     private Animator anim;
 
+
+   
+
+
+
+
+
+
+
+
+
     // Use this for initialization
     void Start () {
 		rb2 = gameObject.GetComponent<Rigidbody2D> ();
 		MoveDown ();
+        
 
         anim = GetComponent<Animator>();
 
@@ -39,14 +51,18 @@ public void OnCollisionEnter2D(Collision2D coll)
 
             Destroy(gameObject, 1);
             Debug.Log("explosion");
+            //Destroy(GameObject.Find("Meteor").GetComponent<PolygonCollider2D>());
+
         }
         if (coll.gameObject.tag == "Player")
         {
 
             anim.SetBool("Explosion", true);
-            Destroy(gameObject,1);
+            Destroy(gameObject,1);  
 
-
+            
+           // Destroy(GameObject.Find("Meteor").GetComponent<PolygonCollider2D>());
+           
 
         }
     }

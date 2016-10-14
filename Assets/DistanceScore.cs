@@ -30,7 +30,7 @@ public class DistanceScore : MonoBehaviour
         
 
         TextScore = GetComponent<Text>();
-        TextScore.text = "" +Score.ToString("F0");
+        TextScore.text = "score =" +Score.ToString("F0");
 
 
     }

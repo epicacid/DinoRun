@@ -8,14 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SubScenes/MainMenu.unity
   - enabled: 1
-    path: Assets/Scenes/NoahTestScene/NoahTestScene.unity
-  - enabled: 1
     path: Assets/Scenes/SubScenes/Credit.unity
   - enabled: 1
     path: Assets/Scenes/SubScenes/HowToPlay.unity
-  - enabled: 1
-    path: Assets/Scenes/SubScenes/Game Over.unity
-  - enabled: 1
-    path: Assets/Scenes/SubScenes/Win.unity
   - enabled: 1
     path: Assets/Scenes/NielsTestScene/NielsTestScene.unity

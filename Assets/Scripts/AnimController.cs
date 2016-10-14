@@ -33,6 +33,14 @@ public class AnimController : MonoBehaviour {
             anim.SetBool("Walk", true);
         }
 
+        if (GameObject.Find("Player").GetComponent<PlayerMovementEndless>().moveSpeed == 0)  //kijkt of grounded op de player false is
+        {
+
+            anim.SetBool("Death", true);
+        }
+
+
+
 
 
 
