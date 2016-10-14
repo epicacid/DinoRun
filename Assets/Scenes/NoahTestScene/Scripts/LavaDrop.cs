@@ -11,6 +11,8 @@ public class LavaDrop : MonoBehaviour {
 	private float _lavaSpeed = 10.0f;
 	[SerializeField]
 	private float maxLava = 10.0f;
+	[SerializeField]
+	private float randomTime;
 
 
 
@@ -25,7 +27,7 @@ public class LavaDrop : MonoBehaviour {
 		for(int i = 0; i < maxLava; i++){
 			Instantiate  (lava, spawnPoints.transform.position,Random.rotation);
 		}
-		yield return new WaitForSeconds (5);
+		yield return new WaitForSeconds (randomTime);
 		StartCoroutine (Spawn());
 	}
 
